@@ -97,4 +97,10 @@ configurations.all {
     }
 }
 ```
+or like:
+```
+resolutionStrategy.dependencySubstitution {
+        substitute module('ccom.typesafe:config:1.2.1') with module('com.typesafe:config:1.3.1')
+    }
+```
 does not give the right version.
